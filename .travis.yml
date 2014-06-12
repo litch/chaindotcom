@@ -4,3 +4,6 @@ rvm:
   - 2.1.1
   - jruby-19mode # JRuby in 1.9 mode
   - rbx-2.1.1
+
+env:
+  CHAIN_API_KEY=GUEST-TOKEN
