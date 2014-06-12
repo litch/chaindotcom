@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/litch/chaindotcom.png)](https://codeclimate.com/github/litch/chaindotcom)
 ![Travis Status](https://travis-ci.org/litch/chaindotcom.svg)
 
 # Chaindotcom
