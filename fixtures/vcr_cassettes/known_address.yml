@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://d8eb435df6001172e4aa781bc71202c6@api.chain.com/v1/bitcoin/addresses/17x23dNjXJLzGMev6R63uyRhMWP1VHawKc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Thu, 12 Jun 2014 12:55:17 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dfa5559f560ab1572d6715c992690e28b1402577717684; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.chain.com; HttpOnly
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - ''
+      Cf-Ray:
+      - 139633af8640092c-DFW
+    body:
+      encoding: UTF-8
+      string: "{\"hash\":\"17x23dNjXJLzGMev6R63uyRhMWP1VHawKc\",\"balance\":5000000000,\"received\":5000000000,\"sent\":0,\"unconfirmed_received\":0,\"unconfirmed_sent\":0,\"unconfirmed_balance\":0}"
+    http_version: 
+  recorded_at: Thu, 12 Jun 2014 12:55:17 GMT
+recorded_with: VCR 2.9.2

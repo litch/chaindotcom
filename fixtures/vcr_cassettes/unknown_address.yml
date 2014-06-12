@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://d8eb435df6001172e4aa781bc71202c6@api.chain.com/v1/bitcoin/addresses/1BZhjFc1ZnWXuSozoyM5V7sHsruCbrct1E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Thu, 12 Jun 2014 12:55:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '81'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0bb7760c73164c4e99f0863bb291468e1402577717124; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.chain.com; HttpOnly
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - ''
+      Cf-Ray:
+      - 139633ac060b092c-DFW
+    body:
+      encoding: UTF-8
+      string: "{\"message\":\"Unable to find address with hash=1BZhjFc1ZnWXuSozoyM5V7sHsruCbrct1E\"}"
+    http_version: 
+  recorded_at: Thu, 12 Jun 2014 12:55:17 GMT
+recorded_with: VCR 2.9.2
