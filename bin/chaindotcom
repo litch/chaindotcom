@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'chaindotcom'
+Chaindotcom::ProjectInitializer.new.run
