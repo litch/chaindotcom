@@ -1,5 +1,5 @@
 require "chaindotcom/version"
+require 'chaindotcom/project_initializer'
 
 module Chaindotcom
-  # Your code goes here...
 end
