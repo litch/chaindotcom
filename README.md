@@ -1,3 +1,5 @@
+![Travis Status](https://travis-ci.org/litch/chaindotcom.svg)
+
 # Chaindotcom
 
 This provides access to the (Chain.com)[https://chain.com/] API.
