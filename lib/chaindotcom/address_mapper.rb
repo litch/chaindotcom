@@ -34,7 +34,7 @@ class Chaindotcom::AddressMapper
     chain_cert = OpenSSL::X509::Certificate.new(File.read('config/chain.pem'))
     conn = Faraday.new( url: "https://api.chain.com",
                         ssl: {
-                                :client_cert  => chain_cert
+                                client_cert: chain_cert
                               }) do |faraday|
       faraday.request  :username_only_auth, ENV['CHAIN_API_KEY']
       faraday.response :logger
