@@ -1,20 +1,4 @@
-require 'faraday'
 require 'json'
-
-module Faraday
-  class Request::UsernameOnlyAuthentication < Request.load_middleware(:authorization)
-    # Public
-    def self.header(token, options = nil)
-      value = Base64.encode64(token)
-      value.gsub!("\n", '')
-      super(:Basic, value)
-    end
-
-    def initialize(app, token, options = nil)
-      super(app, token, options)
-    end
-  end
-end
 
 class Chaindotcom::AddressMapper
   def load(address)
@@ -37,7 +21,6 @@ class Chaindotcom::AddressMapper
                                 client_cert: chain_cert
                               }) do |faraday|
       faraday.request  :username_only_auth, ENV['CHAIN_API_KEY']
-      faraday.response :logger
       faraday.adapter  Faraday.default_adapter
     end
 
