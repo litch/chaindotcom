@@ -15,31 +15,31 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 500
-      message: Internal Server Error
+      code: 200
+      message: OK
     headers:
       Server:
       - cloudflare-nginx
       Date:
-      - Thu, 12 Jun 2014 13:45:39 GMT
+      - Fri, 13 Jun 2014 14:22:31 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '81'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=da71f8479390f01864d7daa34702eda331402580739373; expires=Mon, 23-Dec-2019
+      - __cfduid=d3aeb9b9bcd9ef13406b601df5401c36c1402669351822; expires=Mon, 23-Dec-2019
         23:50:00 GMT; path=/; domain=.chain.com; HttpOnly
       Access-Control-Allow-Credentials:
       - 'true'
       Access-Control-Allow-Origin:
       - ''
       Cf-Ray:
-      - 13967d75178c0926-DFW
+      - 139ef0d8e7de0926-DFW
     body:
       encoding: UTF-8
-      string: "{\"message\":\"Unable to find address with hash=1BZhjFc1ZnWXuSozoyM5V7sHsruCbrct1E\"}"
+      string: '{"hash":"1BZhjFc1ZnWXuSozoyM5V7sHsruCbrct1E","balance":0,"received":0,"sent":0,"unconfirmed_received":0,"unconfirmed_sent":0,"unconfirmed_balance":0}'
     http_version: 
-  recorded_at: Thu, 12 Jun 2014 13:45:39 GMT
+  recorded_at: Fri, 13 Jun 2014 14:22:31 GMT
 recorded_with: VCR 2.9.2

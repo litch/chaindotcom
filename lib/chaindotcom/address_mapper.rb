@@ -20,26 +20,14 @@ class Chaindotcom::AddressMapper
                         ssl: {
                                 client_cert: chain_cert
                               }) do |faraday|
-      faraday.request  :username_only_auth, ENV['CHAIN_API_KEY']
+      faraday.request  :basic_auth, ENV['CHAIN_API_KEY'], ''
+      faraday.response :logger     
       faraday.adapter  Faraday.default_adapter
     end
 
     response = conn.get "/v1/bitcoin/addresses/#{address.hash}"
 
-    parsed_response = JSON.parse(response.body, symbolize_names: true)
-
-    if response.status == 500 && parsed_response[:message].match(/Unable to find address with hash/)
-      {
-        balance: 0,
-        received: 0,
-        sent: 0,
-        unconfirmed_received: 0,
-        unconfirmed_sent: 0,
-        unconfirmed_balance: 0,
-      }
-    else
-      parsed_response
-    end
+    JSON.parse(response.body, symbolize_names: true)
 
   end
 

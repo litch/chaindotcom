@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Thu, 12 Jun 2014 13:45:40 GMT
+      - Fri, 13 Jun 2014 14:22:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -29,17 +29,17 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dd5ed841d281d9118a0992e02bd8662721402580740028; expires=Mon, 23-Dec-2019
+      - __cfduid=d7e3d3a83b6c8658e7c5262f68d4dcc9d1402669352131; expires=Mon, 23-Dec-2019
         23:50:00 GMT; path=/; domain=.chain.com; HttpOnly
       Access-Control-Allow-Credentials:
       - 'true'
       Access-Control-Allow-Origin:
       - ''
       Cf-Ray:
-      - 13967d7927e60926-DFW
+      - 139ef0dad3c70926-DFW
     body:
       encoding: UTF-8
-      string: "{\"hash\":\"17x23dNjXJLzGMev6R63uyRhMWP1VHawKc\",\"balance\":5000000000,\"received\":5000000000,\"sent\":0,\"unconfirmed_received\":0,\"unconfirmed_sent\":0,\"unconfirmed_balance\":0}"
+      string: '{"hash":"17x23dNjXJLzGMev6R63uyRhMWP1VHawKc","balance":5000000000,"received":5000000000,"sent":0,"unconfirmed_received":0,"unconfirmed_sent":0,"unconfirmed_balance":0}'
     http_version: 
-  recorded_at: Thu, 12 Jun 2014 13:45:40 GMT
+  recorded_at: Fri, 13 Jun 2014 14:22:32 GMT
 recorded_with: VCR 2.9.2
